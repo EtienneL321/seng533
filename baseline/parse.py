@@ -36,10 +36,10 @@ def main():
   f9.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
 
   while block := f1.read(4096):
-    if block.find("userAddedSuccessfully"):
+    if block.find("userAddedSuccessfully") != -1:
       break
 
-  data = block.split('browser_data_received')[1]
+  data = block.split('userAddedSuccessfully')[1]
   if block := f1.read(4096):
     data += block
 

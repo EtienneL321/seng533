@@ -1,5 +1,0 @@
-VUs: 1 and Iterations: 10 -->  avg=13.6ms min=0s med=16ms max=24ms
-VUs: 1 and Iterations: 10 -->  avg=13.6ms min=0s med=16ms max=24ms
-VUs: 1 and Iterations: 10 -->  avg=13.6ms min=0s med=16ms max=24ms
-VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  avg=114.56ms min=8ms med=40ms max=4.04s
-VUs: 1 and Iterations: 50 -->  avg=114.56ms min=8ms med=40ms max=4.04s

@@ -25,6 +25,8 @@ def main():
   f8 = open('textfiles/web_vital_ttfb.txt', "a")
   f9 = open('textfiles/iteration_duration.txt', "a")
 
+  f10 = open('textfiles/checks.txt', "a")
+
   header = f1.read(600)
   f2.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
   f3.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
@@ -34,6 +36,7 @@ def main():
   f7.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
   f8.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
   f9.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
+  f10.write("VUs: " + header.split(":")[4].split()[3] + " and Iterations: " + header.split(":")[6].split()[0] + " -->  ")
 
   while block := f1.read(4096):
     if block.find("userAddedSuccessfully") != -1:
@@ -93,6 +96,11 @@ def main():
   split = iteration_duration.split()
   f9.write(split[0] + " " + split[1] + " " + split[2] + " " + split[3] + "\n")
 
+  # Get checks
+  checks = measured_data[11]
+  split = checks.split("data_received")
+  f10.write(split[0])
+
 
   f1.close()
   f2.close()
@@ -103,6 +111,7 @@ def main():
   f7.close()
   f8.close()
   f9.close()
+  f10.close()
 
 
 if __name__ == "__main__":

@@ -9,6 +9,7 @@ def main():
   f7 = open('web_vital_lcp.txt', "w")
   f8 = open('web_vital_ttfb.txt', "w")
   f9 = open('iteration_duration.txt', "w")
+  f10 = open('checks.txt', "w")
 
   f2.close()
   f3.close()
@@ -18,6 +19,7 @@ def main():
   f7.close()
   f8.close()
   f9.close()
+  f10.close()
 
 if __name__ == "__main__":
   main()

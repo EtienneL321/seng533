@@ -1,5 +1,0 @@
-VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs
-VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs
-VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs
-VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  VUs: 1 and Iterations: 50 -->  avg=719.99µs min=399.99µs med=699.99µs max=1.59ms
-VUs: 1 and Iterations: 50 -->  avg=719.99µs min=399.99µs med=699.99µs max=1.59ms

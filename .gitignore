@@ -1,0 +1,9 @@
+../results.txt
+../../http_req_duration.txt
+../../iteration_duration.txt
+../../web_vital_cls.txt
+../../web_vital_fcp.txt
+../../web_vital_fid.txt
+../../web_vital_inp.txt
+../../web_vital_lcp.txt
+../../web_vital_ttfb.txt

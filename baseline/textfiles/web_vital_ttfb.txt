@@ -1,0 +1,3 @@
+VUs: 1 and Iterations: 10 -->  avg=182.3ms min=158ms med=175.84ms max=224.3ms
+VUs: 1 and Iterations: 10 -->  avg=182.3ms min=158ms med=175.84ms max=224.3ms
+VUs: 1 and Iterations: 10 -->  avg=182.3ms min=158ms med=175.84ms max=224.3ms

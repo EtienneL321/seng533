@@ -1,0 +1,3 @@
+VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs
+VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs
+VUs: 1 and Iterations: 10 -->  avg=360µs min=200µs med=349.99µs max=600µs

@@ -1,0 +1,3 @@
+VUs: 1 and Iterations: 10 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 1 and Iterations: 10 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 1 and Iterations: 10 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764

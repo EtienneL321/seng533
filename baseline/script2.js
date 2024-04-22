@@ -4,15 +4,16 @@ import exec from "k6/execution";
 
 export const options = {
   scenarios: {
-    ui: {
-      executor: "shared-iterations",
+    scenario_10_VUs_5_Iterations: {
+      executor: "per-vu-iterations",
       options: {
         browser: {
           type: "chromium",
         },
       },
-      vus: 1,
-      iterations: 50,
+      vus: 10,
+      iterations: 5,
+      maxDuration: "10m",
     },
   },
   thresholds: {
@@ -28,36 +29,64 @@ export default async function () {
     /* Populate page element */
     await page.goto("https://djaq3qtxdz92e.cloudfront.net/");
 
-    /* Fill id and username for "Create User" field */
-    let id = exec.vu.idInInstance;
-    page.locator("(//input[@id='userId'])[1]").type(id);
-    let username = "user" + id.toString();
-    page.locator("//*[@id='userName']").type(username);
-
     /* Get Buttons */
-    let createUserButton = page.locator(
-      "//*[@id='app']/div[2]/form/div[3]/button"
-    );
-    let getUserButton = page.locator(
-      "//*[@id='app']/div[3]/form/div[2]/button"
-    );
+    const createUserButton = page.locator('//*[@id="create-user-button"]');
+    const getUserButton = page.locator('//*[@id="get-user-button"]');
+    const deleteUserButton = page.locator('//*[@id="delete-user-button"]');
 
-    /* Press "Create User" button and wait 3s */
-    await Promise.all([page.waitForTimeout(3000), createUserButton.click()]);
+    /**
+     * Create user
+     */
+    let temp_id = exec.vu.idInInstance;
+    let id = temp_id.toString();
+    let username = "user" + id;
+    page.locator('//*[@id="create-user-id-input"]').type(id);
+    page.locator('//*[@id="create-user-name-input"]').type(username);
 
-    /* Fill id for "Get User By ID" field */
-    page.locator("(//input[@id='userId'])[2]").type(id);
+    await createUserButton.click();
+    page.waitForSelector('//*[@id="create-user"]/h3');
 
-    /* Pres "Get User" button and wait 3s */
-    await Promise.all([page.waitForFunction(3000), getUserButton.click()]);
+    /**
+     * Get user
+     */
+    page.locator('//*[@id="get-user-input"]').type(id);
 
-    /* Check that new user was successfully created */
-    let ans = id.toString() + " . " + username;
+    await getUserButton.click();
+    page.waitForSelector('//*[@id="get-user-by-id"]/h3');
+
+    /**
+     * Check that user was successfully created
+     */
+    let ans = id + " . " + username;
     check(page, {
       userAddedSuccessfully: (p) =>
-        p.locator("//*[@id='app']/div[3]/h3").textContent() == ans,
+        p.locator('//*[@id="get-user-by-id"]/h3').textContent() == ans,
+    });
+
+    /**
+     * Delete user
+     */
+    page.locator('//*[@id="delete-user-input"]').type(id);
+
+    await deleteUserButton.click();
+    page.waitForSelector('//*[@id="delete-user-by-id"]/div/h3');
+
+    /**
+     * Check that user was deleted successfulyy
+     */
+    let delAns = "User deleted";
+    check(page, {
+      userDeletedSuccessfully: (p) =>
+        p.locator('//*[@id="delete-user-by-id"]/div/h3').textContent() ==
+        delAns,
     });
   } finally {
     page.close();
   }
 }
+
+// export function handleSummary(data) {
+//   return {
+//     "summary.json": JSON.stringify(data), //the default data object
+//   };
+// }

@@ -1,0 +1,12 @@
+VUs: 1 and Iterations: 10 -->   100.00% ✓ 10       ✗ 0  
+     VUs: 1 and Iterations: 50 -->   100.00% ✓ 50       ✗ 0  
+     VUs: 1 and Iterations: 100 -->   100.00% ✓ 100      ✗ 0  
+     VUs: 1 and Iterations: 200 -->   100.00% ✓ 129      ✗ 0  
+     VUs: 10 and Iterations: 10 -->   100.00% ✓ 10       ✗ 0   
+     VUs: 10 and Iterations: 50 -->   88.00% ✓ 44       ✗ 6   
+     VUs: 10 and Iterations: 100 -->   100.00% ✓ 100      ✗ 0   
+     VUs: 10 and Iterations: 200 -->   100.00% ✓ 200      ✗ 0     
+     VUs: 50 and Iterations: 50 -->   94.00% ✓ 47       ✗ 3   
+     VUs: 50 and Iterations: 100 -->   92.00% ✓ 92       ✗ 8   
+     VUs: 50 and Iterations: 200 -->   92.00% ✓ 184      ✗ 16  
+     

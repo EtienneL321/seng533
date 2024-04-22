@@ -1,0 +1,11 @@
+VUs: 1 and Iterations: 10 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 1 and Iterations: 50 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 1 and Iterations: 100 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 1 and Iterations: 200 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 10 and Iterations: 10 -->  avg=0.138764 min=0.138764 med=0.138764 max=0.138764
+VUs: 10 and Iterations: 50 -->  avg=0.125046 min=0 med=0.138764 max=0.138764
+VUs: 10 and Iterations: 100 -->  avg=0.134601 min=0 med=0.138764 max=0.138764
+VUs: 10 and Iterations: 200 -->  avg=0.135295 min=0 med=0.138764 max=0.138764
+VUs: 50 and Iterations: 50 -->  avg=0.008876 min=0 med=0 max=0.138764
+VUs: 50 and Iterations: 100 -->  avg=0.033607 min=0 med=0 max=0.138764
+VUs: 50 and Iterations: 200 -->  avg=0.036065 min=0 med=0 max=0.138764

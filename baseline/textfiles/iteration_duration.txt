@@ -1,0 +1,11 @@
+VUs: 1 and Iterations: 10 -->  avg=4.69s min=4.18s med=4.34s max=7.43s
+VUs: 1 and Iterations: 50 -->  avg=4.27s min=4.12s med=4.27s max=4.52s
+VUs: 1 and Iterations: 100 -->  avg=4.42s min=4.1s med=4.33s max=7.36s
+VUs: 1 and Iterations: 200 -->  avg=4.39s min=4.13s med=4.31s max=5.78s
+VUs: 10 and Iterations: 10 -->  avg=5.01s min=4.73s med=5.06s max=5.12s
+VUs: 10 and Iterations: 50 -->  avg=4.89s min=4.17s med=4.91s max=5.85s
+VUs: 10 and Iterations: 100 -->  avg=4.72s min=4.17s med=4.82s max=5.23s
+VUs: 10 and Iterations: 200 -->  avg=4.37s min=4.1s med=4.31s max=5.17s
+VUs: 50 and Iterations: 50 -->  avg=10.37s min=7.56s med=9.27s max=39.68s
+VUs: 50 and Iterations: 100 -->  avg=11.06s min=4.5s med=8.8s max=42.23s
+VUs: 50 and Iterations: 200 -->  avg=10.69s min=4.72s med=8.44s max=42.9s

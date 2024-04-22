@@ -1,0 +1,11 @@
+VUs: 1 and Iterations: 10 -->  avg=439.99µs min=299.99µs med=400µs max=699.99µs
+VUs: 1 and Iterations: 50 -->  avg=397.99µs min=299.99µs med=400µs max=500µs
+VUs: 1 and Iterations: 100 -->  avg=387µs min=199.99µs med=399.99µs max=699.99µs
+VUs: 1 and Iterations: 200 -->  avg=388.37µs min=200µs med=399.99µs max=600µs
+VUs: 10 and Iterations: 10 -->  avg=760µs min=399.99µs med=400µs max=3.8ms
+VUs: 10 and Iterations: 50 -->  avg=474µs min=299.99µs med=400µs max=1.2ms
+VUs: 10 and Iterations: 100 -->  avg=705.99µs min=299.99µs med=400µs max=12.69ms
+VUs: 10 and Iterations: 200 -->  avg=412.5µs min=199.99µs med=399.99µs max=1.1ms
+VUs: 50 and Iterations: 50 -->  avg=561.99µs min=299.99µs med=500µs max=2.59ms
+VUs: 50 and Iterations: 100 -->  avg=634µs min=299.99µs med=500µs max=2.79ms
+VUs: 50 and Iterations: 200 -->  avg=1.12ms min=299.99µs med=500µs max=67.7ms

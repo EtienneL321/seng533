@@ -1,0 +1,11 @@
+VUs: 1 and Iterations: 10 -->  avg=12ms min=8ms med=8ms max=24ms
+VUs: 1 and Iterations: 50 -->  avg=10.4ms min=0s med=8ms max=24ms
+VUs: 1 and Iterations: 100 -->  avg=9.92ms min=0s med=8ms max=40ms
+VUs: 1 and Iterations: 200 -->  avg=11.84ms min=0s med=8ms max=40ms
+VUs: 10 and Iterations: 10 -->  avg=48ms min=24ms med=44ms max=96ms
+VUs: 10 and Iterations: 50 -->  avg=22.4ms min=0s med=16ms max=104ms
+VUs: 10 and Iterations: 100 -->  avg=22ms min=0s med=16ms max=112ms
+VUs: 10 and Iterations: 200 -->  avg=15.32ms min=0s med=16ms max=136ms
+VUs: 50 and Iterations: 50 -->  avg=1.95s min=0s med=1.8s max=4.29s
+VUs: 50 and Iterations: 100 -->  avg=1.43s min=8ms med=1.44s max=4.2s
+VUs: 50 and Iterations: 200 -->  avg=1.16s min=8ms med=1.03s max=4.1s

@@ -1,0 +1,11 @@
+VUs: 1 and Iterations: 10 -->  avg=221.73ms min=31.08ms med=151.16ms max=1.68s
+VUs: 1 and Iterations: 50 -->  avg=142.56ms min=31.66ms med=127.65ms max=563.09ms
+VUs: 1 and Iterations: 100 -->  avg=169.99ms min=29.14ms med=142.22ms max=2.67s
+VUs: 1 and Iterations: 200 -->  avg=164.65ms min=29.49ms med=133.45ms max=1.66s
+VUs: 10 and Iterations: 10 -->  avg=194.04ms min=33.15ms med=172.87ms max=653.89ms
+VUs: 10 and Iterations: 50 -->  avg=185.46ms min=31.73ms med=158.25ms max=1.34s
+VUs: 10 and Iterations: 100 -->  avg=160.57ms min=29.59ms med=146.44ms max=606.82ms
+VUs: 10 and Iterations: 200 -->  avg=146.92ms min=29.56ms med=127.66ms max=707.59ms
+VUs: 50 and Iterations: 50 -->  avg=323.07ms min=34.01ms med=171.74ms max=2.94s
+VUs: 50 and Iterations: 100 -->  avg=301.89ms min=32.12ms med=147.98ms max=3.74s
+VUs: 50 and Iterations: 200 -->  avg=280.12ms min=30.67ms med=158.18ms max=3.87s
